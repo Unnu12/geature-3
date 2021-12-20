@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+   <center>
+       <div class="container">
+  <h1 class="btn btn-warning"> Gesture Web App
+    <br>
+    <span> &#128076; </span> 
+    <span> &#128077;</span> 
+    <span> &#9996; </span> 
+    <span> &#9995; </span>
+    <span>  &#128079; </span>
+  </h1>
+  <hr>
+  <p>On the Following Gestures Model Is Trained</p>
+  <p class="btn btn-info">
+    <span> &#128076; </span> 
+    <span> &#128077;</span> 
+    <span> &#9996; </span> </p>
+    
+    <hr>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <label> Webcam View</label>
+      <div id="camera"></div>
+      <br>
+<button class="btn btn-info" onclick="take_snapshot()">Take Snapshot </button>
+</div>      
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label id = "prediction_1" class="btn btn-success">Prediction 1 </label>
+  <p class="emotion_name" id="result_emoji"></p>
+   <p class="emoij" id = "update_emoji"></p>
+<br> 
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Snapshot - </label>
+  <div id="result"></div>
+  <br>
+  <button class = "btn btn-info" onclick="check()">Predict Emoji</button>
+</div>
+  <br><br>
+
+</div>
+</center>
+</body>
+</html>
+  
+      
+  
